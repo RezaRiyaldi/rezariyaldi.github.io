@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="84.629471mm"
+   height="56.97636mm"
+   viewBox="0 0 84.629471 56.97636"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="brand.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.56189594"
+     inkscape:cx="-70.297714"
+     inkscape:cy="205.55408"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-48.610985,-104.10941)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:1;font-family:Poppins;-inkscape-font-specification:Poppins;text-align:end;text-anchor:end;fill:#ff0000;stroke:#ffffff;stroke-width:8.11699;stroke-linejoin:round"
+       x="137.84528"
+       y="131.85202"
+       id="text1618"><tspan
+         sodipodi:role="line"
+         id="tspan1616"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#ff0000;stroke:none;stroke-width:8.117"
+         x="137.84528"
+         y="131.85202" /></text>
+    <g
+       id="g44020"
+       inkscape:export-filename="D:\Develove3000\portofolio\asset\img\logoBrand.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         id="rect25848"
+         style="fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:8.11699;stroke-linejoin:round"
+         d="m 70.271679,104.10941 v 56.97636 H 54.115041 c -3.049037,0 -5.504056,-2.45501 -5.504056,-5.50405 v -45.96826 c 0,-3.04904 2.455019,-5.50405 5.504056,-5.50405 z" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:1;font-family:Poppins;-inkscape-font-specification:Poppins;text-align:start;text-anchor:start;fill:#ffffff;stroke:none;stroke-width:8.11699;stroke-linejoin:round"
+         x="56.047054"
+         y="129.18834"
+         id="text13174"><tspan
+           sodipodi:role="line"
+           id="tspan13172"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:Poppins;text-align:start;text-anchor:start;fill:#ffffff;stroke-width:8.117"
+           x="56.047054"
+           y="129.18834">R<tspan
+   style="fill:#1a1a1a;fill-opacity:1"
+   id="tspan26756">EZA</tspan></tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:Poppins;text-align:start;text-anchor:start;fill:#ffffff;stroke-width:8.117"
+           x="56.047054"
+           y="151.76614"
+           id="tspan16254">R<tspan
+   style="fill:#1a1a1a"
+   id="tspan27850">IYALDI</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

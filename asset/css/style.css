@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    height: 100%;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    background: transparent;
+    box-shadow: 0 2px 2px -2px #aaa;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 99;
+}
+
+nav a._brand{
+    margin: auto 0 auto 30px;
+}
+
+nav ul{
+    list-style: none;    
+    display: flex;
+    margin: auto 0;
+}
+
+nav ul:nth-child(3){
+    font-size: 24px;
+}
+
+nav ul li a{
+    color: #222;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+
+nav.nav-active{
+    background-color: #fff;
+    transition: .5s;
+    opacity: .9;
+}
+
+nav:not(.nav-active){
+    background-color: transparent;
+    transition: .5s;
+}
+
+.burger{   
+    right: 20px;
+    margin: auto 30px auto 0;
+    color: #222;
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.hero{
+    height: 100%;
+    background: #dee6f3;
+    padding-left: 20px;
+}
+
+.hero img{
+    position: absolute;
+    left: 50px;
+}
+
+.hero .col-6 h1{
+    font-size: 50px;
+    font-weight: 600;
+} 
+
+.hero .col-6 h3{
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+.hero i{
+    /* background-color: #fff; */
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    font-size: 50px;
+    animation: scrollDown 1s cubic-bezier(0.165, 0.84, 0.44, 1) alternate infinite;
+    color: #222;
+    cursor: pointer;
+} 
+
+@keyframes scrollDown {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+
+
+/* ABOUT */
+#about{
+    /* height: 100%;     */
+    margin-bottom: 30px;
+    padding-top: 90px;
+}
+
+#about h1.about-title::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #4e89e7;
+    width: 80px;
+    margin: 0 auto 30px ;
+}
+
+#about .list-skill{
+    list-style: none;
+}
+
+#about .list-skill li::before{
+    content: '\eed9';
+    font-family: 'icofont';
+    margin-right: 10px;
+    color: #4e89e7;
+}
+
+#about .web i, #about .android i, #about .design i{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    font-size: 200px;
+    opacity: .1;
+}
+
+/* CONTACT */
+#contact{
+    /* height: 50%; */
+    background-color: #5a5a5a;
+    padding-top: 70px;
+}
+
+#contact ul li{
+    list-style: none;
+}
+
+#contact ul li a{
+    color: white;
+    line-height: 2;
+    text-decoration: none;
+}
+
+#contact ul li a:hover{
+    color: rgb(167, 167, 167);
+}
+
+#contact ul li a i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#contact iframe{
+    border-radius: 5px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    nav{
+        height: 60px;
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+        transition: .3s;
+        height: 20%;
+    }
+
+    .nav-menu:nth-child(1){
+        left: 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero{
+        padding-right: 20px;
+    }
+
+    .hero div:nth-child(2){
+        background: linear-gradient(120deg, rgba(255,255,255,.8) 0%, rgba(219,219,219,.8) 100%);
+        margin-top: 70px !important;
+        margin-right: 30px;
+        border-radius: 10px;
+    }
+    
+    .hero i{
+        color: white;     
+    }
+}
