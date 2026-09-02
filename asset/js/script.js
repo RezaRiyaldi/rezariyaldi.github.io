@@ -5,8 +5,7 @@ const themeLabel = document.querySelector('[data-theme-label]')
 const primaryNav = document.querySelector('[data-primary-nav]')
 const yearNode = document.querySelector('[data-year]')
 const revealTargets = document.querySelectorAll('[data-reveal]')
-const sectionLinks = document.querySelectorAll('.site-nav a[href^="#"]')
-const sectionNodes = Array.from(document.querySelectorAll('main section[id]'))
+const navLinks = document.querySelectorAll('.nav-link')
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 const themeColorMeta = document.querySelector('meta[name="theme-color"]')
@@ -65,7 +64,7 @@ if (navToggle && primaryNav) {
     syncNavVisibility()
     navToggle.addEventListener('click', toggleNav)
 
-    sectionLinks.forEach((link) => {
+    navLinks.forEach((link) => {
         link.addEventListener('click', () => {
             if (window.innerWidth < 768) {
                 primaryNav.classList.add('hidden')
@@ -135,44 +134,4 @@ if (!prefersReducedMotion && 'IntersectionObserver' in window) {
         element.style.opacity = '1'
         element.style.transform = 'translateY(0)'
     })
-}
-
-if ('IntersectionObserver' in window) {
-    const activeMap = new Map()
-
-    sectionLinks.forEach((link) => {
-        const sectionId = link.getAttribute('href')?.slice(1)
-
-        if (sectionId) {
-            activeMap.set(sectionId, link)
-        }
-    })
-
-    const sectionObserver = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (!entry.isIntersecting) {
-                    return
-                }
-
-                const sectionId = entry.target.getAttribute('id')
-                sectionLinks.forEach((link) => {
-                    link.style.color = ''
-                })
-
-                if (sectionId) {
-                    const activeLink = activeMap.get(sectionId)
-                    if (activeLink) {
-                        activeLink.style.color = '#7dd3fc'
-                    }
-                }
-            })
-        },
-        {
-            threshold: 0.4,
-            rootMargin: '-18% 0px -55% 0px',
-        }
-    )
-
-    sectionNodes.forEach((section) => sectionObserver.observe(section))
 }
