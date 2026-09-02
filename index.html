@@ -1,194 +1,421 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="description" content="Reza Riyaldi is a Backend Engineer focused on API development, web applications, system integration, and database-driven systems with PHP, Laravel, NestJS, and Node.js.">
+    <link rel="canonical" href="https://rezariyaldi.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Reza Riyaldi — Backend Engineer | Laravel, NestJS & Node.js">
+    <meta property="og:description" content="Backend Engineer portfolio focused on APIs, web applications, integrations, and database engineering.">
+    <meta property="og:url" content="https://rezariyaldi.github.io/">
+    <meta property="og:image" content="https://rezariyaldi.github.io/asset/img/profile.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reza Riyaldi — Backend Engineer | Laravel, NestJS & Node.js">
+    <meta name="twitter:description" content="Backend Engineer portfolio focused on APIs, web applications, integrations, and database engineering.">
+    <meta name="twitter:image" content="https://rezariyaldi.github.io/asset/img/profile.png">
+    <link rel="icon" type="image/png" href="asset/img/iconMe.png">
+    <link rel="apple-touch-icon" href="asset/img/iconMe.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 20px 50px rgba(15, 23, 42, 0.14)',
+                    },
+                },
+            },
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="asset/css/style.css">
-    <link rel="icon" href="asset/img/iconMe.png">
-    <title>Reza Riyaldi</title>
+    <title>Reza Riyaldi — Backend Engineer | Laravel, NestJS & Node.js</title>
 </head>
-<body>
-    <nav class="navs">
-        <a href="" class="_brand">
-            <img src="asset/img/brand.svg" alt="" height="50px">
-        </a>
-        <ul class="nav-menu">
-            <li data-aos="fade-right" data-aos-delay="600"><a href="#">Home</a></li>
-            <li data-aos="fade-right" data-aos-delay="300"><a href="#about">About</a></li>
-            <li data-aos="fade-right"><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="nav-menu">
-            <li data-aos="fade-left" data-aos-delay="300">
-                <a href="https://web.facebook.com/profile.php?id=100009427554768"><i class="icofont-facebook"></i></a>
-            </li>
-            <li data-aos="fade-left" data-aos-delay="600">
-                <a href="https://www.instagram.com/boykucayy/"><i class="icofont-instagram"></i></a>
-            </li>
-            <li data-aos="fade-left" data-aos-delay="900">
-                <a href="https://www.linkedin.com/in/reza-riyaldi-b12a541a5/"><i class="icofont-linkedin"></i></a>
-            </li>
-        </ul>
-        <div class="burger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
+<body class="bg-slate-100 font-sans text-slate-900 antialiased selection:bg-sky-400 selection:text-slate-950">
+    <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-slate-900" href="#main">Skip to content</a>
 
-    <div class="hero row m-0 pt-3 overflow-hidden">
-        <div class="col-md-6" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
-            <img src="asset/img/transparent.png" alt="" width="500px">
+    <header data-header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/85 backdrop-blur-xl">
+        <div class="mx-auto flex w-[min(100%-2rem,1180px)] items-center justify-between gap-3 py-4 md:py-5">
+            <a class="flex min-w-0 items-center gap-3 text-white" href="#top" aria-label="Reza Riyaldi home">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-600 text-sm font-extrabold tracking-[0.2em] text-white shadow-soft">RR</span>
+                <span class="min-w-0">
+                    <span class="block text-base font-semibold leading-tight">Reza Riyaldi</span>
+                    <span class="block text-xs font-medium tracking-[0.24em] text-slate-300 uppercase">Backend Engineer</span>
+                </span>
+            </a>
+
+            <div class="flex items-center gap-2 md:gap-3">
+                <button type="button" data-theme-toggle aria-label="Switch to light theme" class="theme-toggle inline-flex h-12 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm font-medium text-white transition hover:bg-white/10">
+                    <span class="theme-toggle-dot"></span>
+                    <span data-theme-label>Light</span>
+                </button>
+
+                <button type="button" data-nav-toggle aria-controls="primary-nav" aria-expanded="false" class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white md:hidden">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="relative block h-4 w-5">
+                        <span class="absolute left-0 top-0 h-0.5 w-5 rounded-full bg-current"></span>
+                        <span class="absolute left-0 top-[0.45rem] h-0.5 w-5 rounded-full bg-current"></span>
+                        <span class="absolute left-0 bottom-0 h-0.5 w-5 rounded-full bg-current"></span>
+                    </span>
+                </button>
+            </div>
+
+            <nav id="primary-nav" data-primary-nav class="site-nav hidden flex-col gap-1 rounded-3xl border border-white/10 bg-slate-900/95 p-2 text-sm font-medium text-slate-200 shadow-2xl shadow-slate-950/40 md:flex md:flex-row md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none">
+                <a class="rounded-2xl px-4 py-3 transition hover:bg-white/5 hover:text-white md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-sky-300" href="#about">About</a>
+                <a class="rounded-2xl px-4 py-3 transition hover:bg-white/5 hover:text-white md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-sky-300" href="#expertise">Expertise</a>
+                <a class="rounded-2xl px-4 py-3 transition hover:bg-white/5 hover:text-white md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-sky-300" href="#experience">Experience</a>
+                <a class="rounded-2xl px-4 py-3 transition hover:bg-white/5 hover:text-white md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-sky-300" href="#projects">Projects</a>
+                <a class="rounded-2xl px-4 py-3 transition hover:bg-white/5 hover:text-white md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-sky-300" href="#stack">Tech Stack</a>
+                <a class="rounded-2xl px-4 py-3 transition hover:bg-white/5 hover:text-white md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-sky-300" href="#education">Education</a>
+                <a class="rounded-2xl px-4 py-3 transition hover:bg-white/5 hover:text-white md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-sky-300" href="#contact">Contact</a>
+            </nav>
         </div>
-        <div class="my-auto mx-auto col-md-6">
-            <h1 data-aos="fade-up" data-aos-delay="500">Hy Everyone!<br>I'm Reza Riyaldi</h1>
-            <h3 data-aos="fade-up" data-aos-delay="800">I am a web designer, android developer, graphic designer</h3>            
-        </div>
-        <a href="#about"><i class="icofont-thin-down"></i></a>
-    </div>
-    
-    <div id="about">
-        <div class="container">
-            <h1 class="text-center about-title">About me</h1>
-            <p class="text-justify">
-                Saya adalah seorang pemuda yang penuh dengan semangat mencari pengalaman dan hal baru.
-                Saya mudah beradaptasi, mampu bekerjasama dengan tim, jujur, pekerja keras, memiliki kemampuan komunikasi dengan baik dan memiliki antusias dalam bekerja.
-            </p>
-            <div class="row about">
-                <div class="col-md-12">
-                    <div class="card border-0">
-                        <div class="card-title pt-2">
-                            <h3>My Skill</h3>
+    </header>
+
+    <main id="main">
+        <section id="top" class="bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.22),transparent_26%),radial-gradient(circle_at_top_right,rgba(37,99,235,0.22),transparent_22%),linear-gradient(180deg,#08111f_0%,#0f172a_100%)] pt-32 pb-20 text-white md:pt-40 md:pb-24">
+            <div class="mx-auto grid w-[min(100%-2rem,1180px)] gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+                <div data-reveal class="space-y-6 opacity-0 translate-y-6 transition-all duration-700 ease-out">
+                    <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-300/85">Backend Engineering • APIs • System Integration</p>
+                    <div class="space-y-4">
+                        <h1 class="max-w-3xl text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">Reza Riyaldi</h1>
+                        <p class="max-w-2xl text-lg leading-8 text-slate-200/90 sm:text-xl">Backend Engineer building reliable APIs, web applications, and database-driven systems with PHP, Laravel, CodeIgniter, Node.js, NestJS, TypeScript, PostgreSQL, MySQL, and Redis.</p>
+                        <p class="max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">My work centers on backend development, application maintenance, system integration, and practical delivery support through Docker, Nginx, Linux, and CI/CD exposure when the product needs it.</p>
+                    </div>
+
+                    <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap" aria-label="Primary actions">
+                        <a class="hero-action hero-action-primary inline-flex items-center justify-center rounded-full bg-sky-500 px-5 py-3.5 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-sky-600" href="#projects">View Projects</a>
+                        <a class="hero-action hero-action-secondary inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3.5 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10" href="asset/file/cv_reza.pdf" download>Download CV</a>
+                        <a class="hero-action hero-action-ghost inline-flex items-center justify-center rounded-full border border-white/15 bg-transparent px-5 py-3.5 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/5" href="https://www.linkedin.com/in/reza-riyaldi-798b52319/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a class="hero-action hero-action-ghost inline-flex items-center justify-center rounded-full border border-white/15 bg-transparent px-5 py-3.5 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/5" href="https://github.com/RezaRiyaldi" target="_blank" rel="noreferrer">GitHub</a>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 text-sm text-slate-200">
+                        <span class="hero-chip rounded-full border border-white/10 bg-white/5 px-4 py-2">PHP</span>
+                        <span class="hero-chip rounded-full border border-white/10 bg-white/5 px-4 py-2">Laravel</span>
+                        <span class="hero-chip rounded-full border border-white/10 bg-white/5 px-4 py-2">CodeIgniter</span>
+                        <span class="hero-chip rounded-full border border-white/10 bg-white/5 px-4 py-2">Node.js</span>
+                        <span class="hero-chip rounded-full border border-white/10 bg-white/5 px-4 py-2">NestJS</span>
+                        <span class="hero-chip rounded-full border border-white/10 bg-white/5 px-4 py-2">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <aside data-reveal class="space-y-4 opacity-0 translate-y-6 transition-all duration-700 ease-out">
+                    <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl shadow-slate-950/40 backdrop-blur">
+                        <img src="asset/img/profile.png" alt="Portrait of Reza Riyaldi" class="hero-photo mx-auto h-full w-full max-w-[260px] object-cover object-top sm:max-w-[300px] lg:max-w-[320px]">
+                    </div>
+
+                    <div class="rounded-[2rem] border border-white/10 bg-slate-900/70 p-5 shadow-2xl shadow-slate-950/40 backdrop-blur">
+                        <p class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-300/80">Primary focus</p>
+                        <div class="mt-3 space-y-2">
+                            <h2 class="text-2xl font-bold tracking-tight text-white">Backend Engineer</h2>
+                            <p class="text-sm leading-7 text-slate-300">APIs, integrations, business logic, and data layers for production web applications.</p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 web mb-3">
-                                <div class="card shadow border-right-0 border-left-0 border-primary">
-                                    <div class="card-body overflow-hidden">
-                                        <div class="card-title text-center">
-                                            <h4>Web Design</h4>
-                                        </div>
-                                        <div class="card-text px-3">
-                                            <p class="text-justify">Mampu membuat web menggunakan</p>
-                                            <ul class="list-skill">
-                                                <li>HTML</li>
-                                                <li>CSS3</li>
-                                                <li>JavaScript</li>
-                                                <li>Bootstrap</li>
-                                            </ul>
-                                        </div>
-                                        <i class="icofont-dashboard-web"></i>
-                                    </div>
-                                </div>
+
+                        <div class="mt-5 grid gap-3 sm:grid-cols-2">
+                            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Engineering domains</p>
+                                <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-200">
+                                    <li>Backend development</li>
+                                    <li>REST API design</li>
+                                    <li>Database engineering</li>
+                                    <li>System integration</li>
+                                </ul>
                             </div>
-                            <div class="col-md-4 android mb-3">
-                                <div class="card shadow border-right-0 border-left-0 border-primary">
-                                    <div class="card-body">
-                                        <div class="card-title text-center">
-                                            <h4>Android Development</h4>
-                                        </div>
-                                        <div class="card-text px-3">
-                                            <p class="text-justify">Mampu membuat Aplikasi Mobile Android
-                                            menggunakan</p>
-                                            <ul class="list-skill">
-                                                <li>Android Studio</li>
-                                                <li>Java Native</li>
-                                                <li>XML untuk Layouting</li>
-                                                <li>Fragment</li>
-                                            </ul>
-                                        </div>
-                                        <i class="icofont-brand-android-robot"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 design mb-3">
-                                <div class="card shadow border-right-0 border-left-0 border-primary">
-                                    <div class="card-body">
-                                        <div class="card-title text-center">
-                                            <h4>Design Graphics</h4>
-                                        </div>
-                                        <div class="card-text px-3">
-                                            <p class="text-justify">Menguasai aplikasi desain grafis seperti</p>
-                                            <ul class="list-skill">
-                                                <li>Inkscape</li>
-                                                <li>Adobe Illustrator</li>
-                                                <li>Corel Draw</li>
-                                                <li>Photoshop</li>
-                                            </ul>
-                                        </div>
-                                        <i class="icofont-pen-nib" style="transform: rotateX(180deg)translateY(10px);"></i>
-                                    </div>
-                                </div>
+                            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Supporting capabilities</p>
+                                <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-200">
+                                    <li>Docker and Nginx</li>
+                                    <li>Linux workflows</li>
+                                    <li>CI/CD exposure</li>
+                                    <li>Vue.js and Tailwind CSS</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="about" class="bg-slate-100 py-20 text-slate-900 md:py-24">
+            <div data-reveal class="mx-auto w-[min(100%-2rem,1180px)] space-y-10 opacity-0 translate-y-6 transition-all duration-700 ease-out">
+                <div class="max-w-3xl space-y-4">
+                    <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-600">About</p>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">Focused on backend systems that stay maintainable in real product environments.</h2>
+                    <p class="text-base leading-8 text-slate-600">I build and support web applications from the backend side: service logic, API endpoints, database structure, integration work, and ongoing maintenance. My experience is strongest in PHP ecosystems, with production exposure to Laravel, CodeIgniter, Node.js, NestJS, TypeScript, PostgreSQL, MySQL, Redis, Docker, and Nginx.</p>
+                </div>
+
+                <div class="grid gap-6 lg:grid-cols-[1.35fr_0.65fr]">
+                    <article class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+                        <h3 class="text-2xl font-bold tracking-tight text-slate-950">What I bring to a backend team</h3>
+                        <p class="mt-4 max-w-3xl text-base leading-8 text-slate-600">I work best on systems where reliability, clarity, and practical delivery matter more than visual polish. That usually means backend services, integrations, data flows, and application maintenance where the code needs to remain understandable for the next engineer who touches it.</p>
+
+                        <div class="mt-6 grid gap-4 md:grid-cols-3">
+                            <div class="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
+                                <span class="text-xs font-bold uppercase tracking-[0.2em] text-sky-600">01</span>
+                                <p class="mt-3 text-sm leading-7 text-slate-700">Clean backend logic and API structure.</p>
+                            </div>
+                            <div class="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
+                                <span class="text-xs font-bold uppercase tracking-[0.2em] text-sky-600">02</span>
+                                <p class="mt-3 text-sm leading-7 text-slate-700">Database-aware development and maintenance.</p>
+                            </div>
+                            <div class="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
+                                <span class="text-xs font-bold uppercase tracking-[0.2em] text-sky-600">03</span>
+                                <p class="mt-3 text-sm leading-7 text-slate-700">Supporting deployment and integration workflows.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <aside class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+                        <h3 class="text-2xl font-bold tracking-tight text-slate-950">Current positioning</h3>
+                        <ul class="mt-5 space-y-4 text-sm leading-7 text-slate-600">
+                            <li><strong class="text-slate-900">Primary role:</strong> Backend Engineer</li>
+                            <li><strong class="text-slate-900">Core stack:</strong> PHP, Laravel, NestJS, Node.js</li>
+                            <li><strong class="text-slate-900">Database focus:</strong> PostgreSQL, MySQL, Redis</li>
+                            <li><strong class="text-slate-900">Support tools:</strong> Docker, Nginx, Linux, CI/CD</li>
+                        </ul>
+                    </aside>
                 </div>
             </div>
-            <a href="asset/file/cv_reza.pdf" class="btn btn-primary rounded-pill btn-large">
-                <i class="icofont-download mr-2"></i>Download My CV
-            </a>
-        </div>
-    </div>
+        </section>
 
-    <div id="contact">
-        <div class="container">
-            <h3 class="text-center text-white pt-3">Contact</h3>
-            <div class="row m-0 p-3">
-                <div class="col-md-6"> 
-                    <iframe class="mt-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1192654262663!2d107.11261701419383!3d-6.24801106291551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69859d666d615d%3A0x6fdd99feee6d51d3!2sMie%20Ayam%20Bangka%20Es%20Kacang%20Merah!5e0!3m2!1sen!2sid!4v1629099872668!5m2!1sen!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
-                    <ul>
-                        <li><a href="https://wa.me/6285695186848"><i class="icofont-whatsapp"></i> My Whatsapp</a></li>
-                        <li><a target="blank" href="https://goo.gl/maps/rXDGjN2L8ikWxM236"><i class="icofont-google-map"></i> Perum Kirana Cibitung, Ds. Wanajaya, Kec. Cibitung, Kab. Bekasi, Jawa Barat, 17520</a></li>
-                        <li>
-                            <a href="https://web.facebook.com/profile.php?id=100009427554768"><i class="icofont-facebook"></i> My Facebook</a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/boykucayy/"><i class="icofont-instagram"></i> My Instagram</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/reza-riyaldi-b12a541a5/"><i class="icofont-linkedin"></i> My Linkedin</a>
-                        </li>
-                    </ul>
+        <section id="expertise" class="bg-slate-200/70 py-20 text-slate-900 md:py-24">
+            <div data-reveal class="mx-auto w-[min(100%-2rem,1180px)] space-y-10 opacity-0 translate-y-6 transition-all duration-700 ease-out">
+                <div class="max-w-3xl space-y-4">
+                    <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-600">Expertise</p>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">Engineering domains organized around backend work first.</h2>
+                    <p class="text-base leading-8 text-slate-600">The structure below reflects how I approach delivery: backend foundations first, then integration, data, infrastructure, and supporting frontend work where required.</p>
                 </div>
-                <div class="col-md-6">
-                    <form class="text-white">
-                        <div class="form-group">
-                            <label for="name">Nama</label>
-                            <input type="text" class="form-control" id="name"
-                            placeholder="Masukan nama anda" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Masukan Email anda" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Subjek</label>
-                            <input type="text" class="form-control" id="name"
-                            placeholder="Judul" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="pesan">Pesan anda</label>
-                            <textarea class="form-control" id="pesan" placeholder="Masukan pesan anda" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">Kirim pesan</button>
-                    </form>
+
+                <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft ring-1 ring-slate-200">
+                        <h3 class="text-xl font-bold tracking-tight text-slate-950">Backend Engineering</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">PHP, Laravel, CodeIgniter, Node.js, NestJS, TypeScript</p>
+                    </article>
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft ring-1 ring-slate-200">
+                        <h3 class="text-xl font-bold tracking-tight text-slate-950">API & System Integration</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">REST API design, service integration, authentication flow, document and business-system coordination</p>
+                    </article>
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft ring-1 ring-slate-200">
+                        <h3 class="text-xl font-bold tracking-tight text-slate-950">Database Engineering</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">PostgreSQL, MySQL, Redis, schema work, query tuning awareness, data handling patterns</p>
+                    </article>
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft ring-1 ring-slate-200">
+                        <h3 class="text-xl font-bold tracking-tight text-slate-950">Application Infrastructure</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">Docker, Nginx, Linux, environment setup, runtime support, CI/CD exposure</p>
+                    </article>
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft ring-1 ring-slate-200">
+                        <h3 class="text-xl font-bold tracking-tight text-slate-950">Supporting Frontend</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">Vue.js, JavaScript, Tailwind CSS for the UI layer when backend work needs frontend support</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <footer class="bg-dark py-3">
-        <p class="text-center text-white my-auto">
-            Made by Reza Riyaldi | 2021
-        </p>
+        <section id="experience" class="bg-slate-100 py-20 text-slate-900 md:py-24">
+            <div data-reveal class="mx-auto w-[min(100%-2rem,1180px)] space-y-10 opacity-0 translate-y-6 transition-all duration-700 ease-out">
+                <div class="max-w-3xl space-y-4">
+                    <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-600">Experience</p>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">Professional work centered on backend delivery and system maintenance.</h2>
+                    <p class="text-base leading-8 text-slate-600">The timeline below keeps the focus on the role and technical contribution without overstating the scope.</p>
+                </div>
+
+                <div class="relative space-y-6 pl-4 md:pl-8 before:absolute before:bottom-0 before:left-2 before:top-2 before:w-px before:bg-gradient-to-b before:from-sky-500/50 before:to-sky-500/10 md:before:left-4">
+                    <article class="relative rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+                        <span class="absolute -left-1.5 top-8 h-4 w-4 rounded-full bg-sky-500 ring-8 ring-sky-500/15"></span>
+                        <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-600">PT RET TECHNOLOGY SOLUTIONS</p>
+                                <h3 class="mt-2 text-2xl font-bold tracking-tight text-slate-950">Programmer / Backend Developer</h3>
+                            </div>
+                            <span class="inline-flex w-fit rounded-full bg-sky-50 px-4 py-2 text-sm font-medium text-sky-700">2023 – July 2026</span>
+                        </div>
+                        <p class="mt-4 text-base leading-8 text-slate-600">Developed and maintained web applications and backend systems with PHP, Laravel, CodeIgniter, Node.js, NestJS, TypeScript, PostgreSQL, MySQL, Redis, Docker, and Nginx.</p>
+                        <ul class="mt-5 space-y-3 text-sm leading-7 text-slate-600">
+                            <li>Built and maintained REST API and service logic.</li>
+                            <li>Handled system integration and database-related work.</li>
+                            <li>Supported application maintenance and CI/CD-adjacent workflows.</li>
+                            <li>Worked with existing Jenkins and Docker-based delivery processes, plus Azure DevOps exposure.</li>
+                        </ul>
+                    </article>
+
+                    <article class="relative rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+                        <span class="absolute -left-1.5 top-8 h-4 w-4 rounded-full bg-sky-500 ring-8 ring-sky-500/15"></span>
+                        <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-600">PJPK Sint Carolus</p>
+                                <h3 class="mt-2 text-2xl font-bold tracking-tight text-slate-950">IT Support</h3>
+                            </div>
+                            <span class="inline-flex w-fit rounded-full bg-sky-50 px-4 py-2 text-sm font-medium text-sky-700">July 2022 – June 2023</span>
+                        </div>
+                        <p class="mt-4 text-base leading-8 text-slate-600">Provided IT support with a concise scope, keeping the emphasis on the transition toward software and backend engineering work.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="bg-slate-200/70 py-20 text-slate-900 md:py-24">
+            <div data-reveal class="mx-auto w-[min(100%-2rem,1180px)] space-y-10 opacity-0 translate-y-6 transition-all duration-700 ease-out">
+                <div class="max-w-3xl space-y-4">
+                    <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-600">Projects</p>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">Representative project themes and backend systems.</h2>
+                    <p class="text-base leading-8 text-slate-600">These cards are written conservatively so they can be matched to actual repositories or portfolio entries later without introducing claims that are not already verified.</p>
+                </div>
+
+                <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+                        <p class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-600">Selected work</p>
+                        <h3 class="mt-3 text-xl font-bold tracking-tight text-slate-950">E-Procurement Backend System</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">Backend and workflow-oriented procurement system with a focus on requests, approvals, and data handling.</p>
+                        <div class="mt-5 flex flex-wrap gap-2 text-sm text-slate-600">
+                            <span class="rounded-full bg-slate-100 px-3 py-1.5">PHP</span><span class="rounded-full bg-slate-100 px-3 py-1.5">Laravel</span><span class="rounded-full bg-slate-100 px-3 py-1.5">PostgreSQL</span><span class="rounded-full bg-slate-100 px-3 py-1.5">REST API</span>
+                        </div>
+                    </article>
+
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+                        <p class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-600">Integration focus</p>
+                        <h3 class="mt-3 text-xl font-bold tracking-tight text-slate-950">Signature and Document Workflow</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">Document-oriented integration layer for routing, signing, and application-side workflow support.</p>
+                        <div class="mt-5 flex flex-wrap gap-2 text-sm text-slate-600">
+                            <span class="rounded-full bg-slate-100 px-3 py-1.5">Node.js</span><span class="rounded-full bg-slate-100 px-3 py-1.5">NestJS</span><span class="rounded-full bg-slate-100 px-3 py-1.5">TypeScript</span><span class="rounded-full bg-slate-100 px-3 py-1.5">Redis</span>
+                        </div>
+                    </article>
+
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+                        <p class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-600">Backend service</p>
+                        <h3 class="mt-3 text-xl font-bold tracking-tight text-slate-950">NestJS REST API</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">API service structure with clean validation, authentication-aware flow, and database integration patterns.</p>
+                        <div class="mt-5 flex flex-wrap gap-2 text-sm text-slate-600">
+                            <span class="rounded-full bg-slate-100 px-3 py-1.5">NestJS</span><span class="rounded-full bg-slate-100 px-3 py-1.5">TypeScript</span><span class="rounded-full bg-slate-100 px-3 py-1.5">MySQL</span><span class="rounded-full bg-slate-100 px-3 py-1.5">REST API</span>
+                        </div>
+                    </article>
+
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+                        <p class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-600">Maintenance work</p>
+                        <h3 class="mt-3 text-xl font-bold tracking-tight text-slate-950">Laravel Business Application</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">Operational web application with maintainable backend logic, data handling, and admin-facing workflows.</p>
+                        <div class="mt-5 flex flex-wrap gap-2 text-sm text-slate-600">
+                            <span class="rounded-full bg-slate-100 px-3 py-1.5">Laravel</span><span class="rounded-full bg-slate-100 px-3 py-1.5">PHP</span><span class="rounded-full bg-slate-100 px-3 py-1.5">MySQL</span><span class="rounded-full bg-slate-100 px-3 py-1.5">Docker</span>
+                        </div>
+                    </article>
+
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+                        <p class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-600">Legacy support</p>
+                        <h3 class="mt-3 text-xl font-bold tracking-tight text-slate-950">CodeIgniter Internal System</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">Legacy application upkeep and integration support for a production system that still needs reliable maintenance.</p>
+                        <div class="mt-5 flex flex-wrap gap-2 text-sm text-slate-600">
+                            <span class="rounded-full bg-slate-100 px-3 py-1.5">CodeIgniter</span><span class="rounded-full bg-slate-100 px-3 py-1.5">PHP</span><span class="rounded-full bg-slate-100 px-3 py-1.5">MySQL</span><span class="rounded-full bg-slate-100 px-3 py-1.5">Nginx</span>
+                        </div>
+                    </article>
+
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+                        <p class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-600">Personal project</p>
+                        <h3 class="mt-3 text-xl font-bold tracking-tight text-slate-950">RAR Adventure</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">Personal development project placeholder that can be linked to GitHub or a demo once the final reference is ready.</p>
+                        <div class="mt-5 flex flex-wrap gap-2 text-sm text-slate-600">
+                            <span class="rounded-full bg-slate-100 px-3 py-1.5">JavaScript</span><span class="rounded-full bg-slate-100 px-3 py-1.5">Vue.js</span><span class="rounded-full bg-slate-100 px-3 py-1.5">Tailwind CSS</span><span class="rounded-full bg-slate-100 px-3 py-1.5">GitHub</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" class="bg-slate-100 py-20 text-slate-900 md:py-24">
+            <div data-reveal class="mx-auto w-[min(100%-2rem,1180px)] space-y-10 opacity-0 translate-y-6 transition-all duration-700 ease-out">
+                <div class="max-w-3xl space-y-4">
+                    <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-600">Tech Stack</p>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">Grouped by the role each tool plays in delivery.</h2>
+                    <p class="text-base leading-8 text-slate-600">This keeps the stack readable and avoids turning the section into a flat list of logos or skill bars.</p>
+                </div>
+
+                <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft ring-1 ring-slate-200">
+                        <h3 class="text-xl font-bold tracking-tight text-slate-950">Backend</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">PHP, Laravel, CodeIgniter, Node.js, NestJS, TypeScript</p>
+                    </article>
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft ring-1 ring-slate-200">
+                        <h3 class="text-xl font-bold tracking-tight text-slate-950">Database</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">PostgreSQL, MySQL, Redis</p>
+                    </article>
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft ring-1 ring-slate-200">
+                        <h3 class="text-xl font-bold tracking-tight text-slate-950">Infrastructure</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">Docker, Nginx, Linux, MinIO</p>
+                    </article>
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft ring-1 ring-slate-200">
+                        <h3 class="text-xl font-bold tracking-tight text-slate-950">Frontend Support</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">Vue.js, JavaScript, Tailwind CSS</p>
+                    </article>
+                    <article class="rounded-[1.75rem] bg-white p-6 shadow-soft ring-1 ring-slate-200">
+                        <h3 class="text-xl font-bold tracking-tight text-slate-950">Tools</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-600">Git, Jenkins, Azure DevOps</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="bg-slate-200/70 py-20 text-slate-900 md:py-24">
+            <div data-reveal class="mx-auto w-[min(100%-2rem,1180px)] space-y-10 opacity-0 translate-y-6 transition-all duration-700 ease-out">
+                <div class="max-w-3xl space-y-4">
+                    <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-600">Education</p>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">Formal study that supports the engineering path.</h2>
+                </div>
+
+                <div class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+                    <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                        <div>
+                            <p class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-600">Universitas Pelita Bangsa</p>
+                            <h3 class="mt-2 text-2xl font-bold tracking-tight text-slate-950">S1 Teknik Informatika</h3>
+                        </div>
+                        <span class="inline-flex w-fit rounded-full bg-sky-50 px-4 py-2 text-sm font-medium text-sky-700">Estimate 2026</span>
+                    </div>
+                    <p class="mt-4 max-w-3xl text-base leading-8 text-slate-600">Education aligned with software and information technology fundamentals, supporting backend development and application engineering work.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-slate-100 py-20 text-slate-900 md:py-24">
+            <div data-reveal class="mx-auto w-[min(100%-2rem,1180px)] space-y-10 opacity-0 translate-y-6 transition-all duration-700 ease-out">
+                <div class="max-w-3xl space-y-4">
+                    <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-600">Contact</p>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">Open to backend roles, product engineering work, and relevant collaborations.</h2>
+                    <p class="text-base leading-8 text-slate-600">Keep the conversation focused on backend systems, APIs, database work, and practical delivery.</p>
+                </div>
+
+                <div class="grid gap-6 lg:grid-cols-[0.75fr_0.55fr]">
+                    <article class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+                        <h3 class="text-2xl font-bold tracking-tight text-slate-950">Professional links</h3>
+                        <div class="mt-6 space-y-3">
+                            <a class="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50" href="https://www.linkedin.com/in/reza-riyaldi-798b52319/" target="_blank" rel="noreferrer">LinkedIn <span class="text-sky-600">↗</span></a>
+                            <a class="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50" href="https://github.com/RezaRiyaldi" target="_blank" rel="noreferrer">GitHub <span class="text-sky-600">↗</span></a>
+                            <a class="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50" href="mailto:rezairawan978@gmail.com">rezairawan978@gmail.com <span class="text-sky-600">↗</span></a>
+                            <a class="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50" href="asset/file/cv_reza.pdf" download>Download CV <span class="text-sky-600">↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft md:p-8">
+                        <h3 class="text-2xl font-bold tracking-tight text-slate-950">Best fit</h3>
+                        <p class="mt-4 text-base leading-8 text-slate-600">Backend Engineer, Backend Developer, API Developer, or Web Application Engineer roles where backend quality and system reliability matter.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 py-8 text-slate-300">
+        <div class="mx-auto grid w-[min(100%-2rem,1180px)] gap-2 text-center md:text-left">
+            <p class="text-base font-semibold text-white">Reza Riyaldi</p>
+            <p class="text-sm leading-7">Backend Engineer focused on APIs, web applications, system integration, and backend systems.</p>
+            <p class="text-sm">© <span data-year></span></p>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="asset/js/script.js"></script>
+    <script src="asset/js/script.js" defer></script>
 </body>
 </html>
